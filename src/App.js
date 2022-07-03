@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
+import ContactForm from './components/ContactForm';
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
       setCurrentCategory={setCurrentCategory}
       currentCategory={currentCategory}></Nav>
       <main>
-        <Gallery></Gallery>
+        <ContactForm></ContactForm>
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
       </main>
     </div>
